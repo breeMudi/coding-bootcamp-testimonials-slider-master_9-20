@@ -6,12 +6,12 @@ html {
     text-align: center;
 }
 
-/* body {
+body {
     background-image: url(images/pattern-curve.svg);
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: left;
-} */
+}
 .container {
     padding: 15px;
 }
@@ -39,6 +39,7 @@ blockquote {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 }
 section {
     margin-top: 10px;
@@ -48,4 +49,28 @@ section {
     background-repeat: no-repeat;
     background-size: 20%;
     background-position-x: center;
+}
+
+.navigate {
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: beige;
+    bottom: 25px;
+    left: 40%;
+    display: flex;
+    padding: 12.5px 12.5px 0 12.5px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navigate > img{
+
+    height: 15px;
+    width: 15px;
+}
+
+.john {
+    display: none;
 }
