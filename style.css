@@ -39,7 +39,7 @@ blockquote {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
+    /* position: relative; */
 }
 section {
     margin-top: 10px;
@@ -51,6 +51,9 @@ section {
     background-position-x: center;
 }
 
+.profile-pic {
+    position: relative;
+}
 .navigate {
     height: 40px;
     width: 80px;
@@ -60,15 +63,15 @@ section {
     bottom: 25px;
     left: 40%;
     display: flex;
-    padding: 12.5px 12.5px 0 12.5px;
+    padding: 5px 10px 5px 10px;
     justify-content: center;
     gap: 30px;
 }
 
 .navigate > img{
-
     height: 15px;
     width: 15px;
+    margin: auto;
 }
 
 .john {
