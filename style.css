@@ -11,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: left;
+    position: relative;
     /* text-align: center; */
 }
 .container {
@@ -57,22 +58,22 @@ section {
     position: relative;
 }
 .navigate {
-    height: 40px;
-    width: 80px;
+    height: 30px;
+    width: 60px;
     border-radius: 20px;
     position: absolute;
     background-color: beige;
     bottom: -20px;
-    left: 40%;
+    left: 33%;
     display: flex;
     padding: 5px 10px 5px 10px;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .navigate > img{
     height: 15px;
-    width: 15px;
+    width: 10px;
     margin: auto;
 }
 
@@ -83,5 +84,11 @@ section {
 }
 
 .john {
-    display: none;
+    position: absolute;
+    /* left: 500px; */
+}
+
+.tanya {
+    position: absolute;
+    left: 500px;
 }
