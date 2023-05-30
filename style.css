@@ -12,6 +12,7 @@ body {
     background-position-y: bottom;
     background-position-x: left;
     position: relative;
+    overflow: hidden;
     /* text-align: center; */
 }
 .container {
@@ -63,7 +64,7 @@ section {
     border-radius: 20px;
     position: absolute;
     background-color: beige;
-    bottom: -20px;
+    bottom: -15px;
     left: 33%;
     display: flex;
     padding: 5px 10px 5px 10px;
