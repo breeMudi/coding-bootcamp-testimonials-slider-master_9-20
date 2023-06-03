@@ -44,7 +44,11 @@
             />
             <div class="navigate">
               <img src="images/icon-prev.svg" alt="previous button" />
-              <img src="images/icon-next.svg" alt="next button" />
+              <img
+                onclick="next(['tanya', 'bridget'])"
+                src="images/icon-next.svg"
+                alt="next button"
+              />
             </div>
           </div>
         </div>
@@ -61,6 +65,41 @@
         </section>
       </div>
 
+      <div class="container bridget">
+        <div class="figure">
+          <div class="profile-pic">
+            <img
+              class="user-img"
+              src="images/code-dp.jpg"
+              alt="Image of Bridget"
+            />
+            <div class="navigate">
+              <img
+                onclick="prev(['bridget', 'tanya'])"
+                src="images/icon-prev.svg"
+                alt="previous button"
+              />
+              <img
+                onclick="next(['bridget', 'john'])"
+                src="images/icon-next.svg"
+                alt="next button"
+              />
+            </div>
+          </div>
+        </div>
+        <section class="content">
+          <blockquote>
+            “ I have always had interest in coding and I find this course as the
+            best place to express my creativity and organizational skills. With
+            my level of exposure, I am confident I'd soon land my dream job. ”
+          </blockquote>
+          <div class="user">
+            <div class="username">Bridget Mudiaga</div>
+            <div class="occupation">Junior Front-end Developer</div>
+          </div>
+        </section>
+      </div>
+
       <div class="container john">
         <div class="figure">
           <div class="profile-pic">
@@ -70,14 +109,18 @@
               alt="Image of John"
             />
             <div class="navigate">
-              <img src="images/icon-prev.svg" alt="previous button" />
+              <img
+                onclick="prev(['john', 'bridget'])"
+                src="images/icon-prev.svg"
+                alt="previous button"
+              />
               <img src="images/icon-next.svg" alt="next button" />
             </div>
           </div>
         </div>
         <section class="content">
           <blockquote>
-            “ If you want to lay the best foundation possible I’d recommend
+            “ If you want to lay the best foundation possible I'd recommend
             taking this course. The depth the instructors go into is incredible.
             I now feel so confident about starting up as a professional
             developer. ”
@@ -110,5 +153,6 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div> not relevant ATM-->
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
