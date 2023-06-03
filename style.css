@@ -1,28 +1,81 @@
-html {
+* {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
     text-align: center;
 }
 
-body {
+.card {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
     background-image: url(images/pattern-curve.svg);
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: left;
+    padding: 7%;
+    position: absolute;
+    height: 100vh;
+}
+
+.figure {
+    padding: 12%;
+    background-image: url(images/pattern-bg.svg);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.navigate {
+    height: 2rem;
+    width: 4rem;
+    border-radius: 20px;
+    position: absolute;
+    background-color: beige;
+    bottom: -1rem;
+    left: 33%;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.navigate > img{
+    height: 0.7rem;
+    width: 0.5rem;
+    margin: auto;
+}
+.profile-pic {
+    display: flex;
     position: relative;
-    overflow: hidden;
-    /* text-align: center; */
 }
-.container {
-    padding: 15px;
+.user-img {
+    width: 100%;
+    border-radius: 10px;
+    /* box-shadow: 0px 26px 17px 4px rgba(232,229,250,0.86); */
 }
+
+section {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: center;
+}
+
 blockquote {
     font-weight: 500;
     color: #202046;
     opacity: 0.6;
-    margin: 15px 0px 20px 0px;
 }
 .username {
     font-weight: 700;
@@ -31,120 +84,99 @@ blockquote {
     font-weight: 300;
     color: #babacf;
 }
-.figure img {
-    width: 100%;
-    border-radius: 10px;
-    /* box-shadow: 0px 26px 17px 4px rgba(232,229,250,0.86); */
-}
-.figure {
-    max-width: 500px;
-    padding: 12%;
-    background-image: url(images/pattern-bg.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: auto;
-}
-section {
-    margin-top: 10px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    background-image: url(images/pattern-quotes.svg);
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position-x: center;
-}
-
-.profile-pic {
-    position: relative;
-}
-.navigate {
-    height: 30px;
-    width: 60px;
-    border-radius: 20px;
-    position: absolute;
-    background-color: beige;
-    bottom: -15px;
-    left: 33%;
-    display: flex;
-    padding: 5px 10px 5px 10px;
-    justify-content: center;
-    gap: 20px;
-}
-
-.navigate > img{
-    height: 15px;
-    width: 10px;
-    margin: auto;
-}
 
 .user {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 3px;
+    font-size: 0.8rem;
 }
 
 .john {
-    position: absolute;
     left: 1500px;
-    display: none;
 }
 
 .tanya {
-    position: absolute;
     /* left: 1500px; */
 }
 
-@media (width > 600px){
-    body {
-        padding: 30px;
-        /* height: fit-content; */
-    }
-    .card {
-        /* position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-        /* border: 2px solid blue; */
-        height: 100%;
+@media (min-width:600px){
+    html {
+        font-size: 30px;
     }
     .container {
-        position: relative;
-        /* min-height: 100vh; */
-    }
-    .navigate {
-        left: 15%;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        align-items: center;
     }
 
     .figure {
-        padding: 75px;
-        max-width: 50%;
-        position: relative;
-        /* position: absolute; */
-        right: 0px;
-
+        padding: 6%;
+        max-width: 55%;
     }
 
     section {
-        max-width: 60%;
-        /* position: absolute; */
-        left: 0px;
-        margin: 15% 0px 15% 100px;
-        width: 50%;
-        text-align: left;
-        background-position-x: 20%;
+        position: relative;
+        max-width: 45%;
         padding-top: 50px;
+        background-position-x: 40%;
     }
 
     blockquote {
-        font-size: 32px;
-        line-height: 40px;
+        line-height: 1.3rem;
+        width: 110%;
+        margin-bottom: 30px;
     }
 
+    blockquote, .user {
+        position: inherit;
+        right: -75px;
+        opacity: 1;
+        font-weight: 300;
+    }
     .user {
         flex-direction: row;
-        gap: 10px;
-        padding-top: 20px;
+        gap: 0.3rem;
+        padding-top: 17.rem;
+        font-size: 0.65rem;
     }
+    .navigate {
+        left: 10%;
+    }
+}
 
+
+
+
+.container {
+    /* position: relative;
+    height: 40rem; */
+
+    /* width: 1000px;
+    height: 20rem; */
+    /* padding: 0;
+    margin: 0; */
+    /* min-height: 100vh; */
+}
+
+
+ .figure {
+    /* padding: 75px; */
+    /* max-width: 50%;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    top: 30px; */
+}
+
+section {
+    /* max-width: 60%; */
+    /* position: absolute; */
+    /* left: 0px;
+    margin: 15% 0px 15% 100px;
+    width: 50%;
+    text-align: left;
+    padding-top: 50px; */
 }
