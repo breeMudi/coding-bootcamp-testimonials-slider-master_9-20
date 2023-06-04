@@ -26,8 +26,8 @@ This is a solution to the Coding bootcamp testimonials slider challenge
 
 ### Links
 
-- Solution URL: [Link to my solution git repo](https://github.com/breeMudi/coding-bootcamp-testimonials-slider-master_9-20)
-- Live Site URL: [Link to project view on git-hub live server](https://breemudi.github.io/profile-card-component_2_20/)
+- Solution URL: [Link to my solution git repo](https://github.com/breeMudi/coding-bootcamp-testimonials-slider-master_9-20/tree/main)
+- Live Site URL: [Link to project view on git-hub live server](https://breemudi.github.io/coding-bootcamp-testimonials-slider-master_9-20/)
 
 ## My process
 
