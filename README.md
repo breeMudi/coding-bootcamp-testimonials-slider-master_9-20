@@ -60,7 +60,7 @@ Finally- for JavaScript:
 - [Styled Components](https://styled-components.com/) - For styles
 
 
-![The mobile view of the testimonial slider](./images/mobile-view.png)
+![The mobile view of the testimonial slider](./images/mobile.png)
 
 ### What I learned
 
